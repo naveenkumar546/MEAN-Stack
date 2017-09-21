@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../public/assets/css/bootstrap.css">
+    <style>
+        .abc{
+       margin-left: 170px;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+<form>
+    <div class="abc">
+<span class="glyphicon glyphicon-remove" ng-click="MyCtrl"></span>
+    </div>
+    <div>
+<label>Name</label><br>
+<input type="text" name="Name"><br>
+<label>Surname</label><br>
+<input type="text" name="Name"><br>
+<label>Message</label><br>
+<input type="textarea" name="Name" placeholder="Enter text"><br>
+<hr>
+<button type="button" class="btn-success">Send</button>
+    </div>
+
+</form>
+<script>
+    angular.module('myApp', [])
+        .controller('MyCtrl', ['$scope', function MyCtrl($scope) {
+            var ctrl = false;
+
+</script>
+</body>
+</html>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<!--<script src="//code.angularjs.org/1.3.20/angular.js"></script>-->
+
+<!--<div ng-app="myApp">-->
+    <!--<div ng-controller="MyCtrl">-->
+        <!--&lt;!&ndash; send en empty object to create a new user &ndash;&gt;-->
+        <!--<button ng-click="$ctrl.openModal({})">X</button>-->
+
+        <!--<div>-->
+            <!--<a href="javasctript: void(0);" ng-repeat-start="u in $ctrl.users" ng-click="$ctrl.openModal(u)">{{u.name}}</a><span ng-repeat-end ng-if="!$last">, </span>-->
+        <!--</div>-->
+
+        <!--<modal-dialog show="$ctrl.showPopup">-->
+            <!--<form name="$ctrl.addForm" ng-submit="$ctrl.saveUser($ctrl.user)">-->
+                <!--<input name="user_name" ng-model="$ctrl.user.name" type="text" ng-required="true"/>-->
+                <!--<div>-->
+                    <!--<button type="submit">Save</button>-->
+                    <!--<button type="button" ng-click="$ctrl.showPopup = false;">Cancel</button>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</modal-dialog>-->
+
+    <!--</div>-->
+<!--</div>-->

@@ -1,0 +1,31 @@
+<br>
+<div class="page-header">
+    <h1>
+        Registration
+    </h1>
+</div>
+<form ng-submit="register.registerUser(regData)">
+    <label>Username</label>
+    <input type="text" class="form-control" name="Username" placeholder="Please Enter Username" ng-model="register.regData.username"><br>
+    <label>Email</label>
+    <input type="email" class="form-control" name="Email" placeholder="Please Enter Email" ng-model="register.regData.email"><br>
+    <label>Password</label>
+    <input type="password" class="form-control" name="Password" placeholder="Please Enter Password" ng-model="register.regData.password"><br>
+
+    <button class="btn btn-primary">Register</button>
+</form>
+<br>
+
+<div class="jumbotron" ng-show="register.loading">
+    <span class="glyphicon glyphicon-repeat-spinner"></span>
+    <p>loading.....</p>
+</div>
+
+
+<br>
+<div class="row show-hide-message" ng-show="register.successMsg">
+    <div class="alert alert-success">{{register.successMsg}}</div>
+</div><br>
+<div class="row show-hide-message" ng-show="register.errorMsg">
+    <div class="alert alert-danger">{{register.errorMsg}}</div>
+</div>

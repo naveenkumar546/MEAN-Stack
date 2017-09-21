@@ -1,0 +1,30 @@
+main{
+
+    padding-top: 30px;
+}
+
+
+header.navbar{
+    border-radius: 0;
+
+}
+
+.show-hide-message.ng-hide-remove{
+    animation: zoomIn  0.3s both ease;
+}
+
+.spinner{
+    animation: spin 1s infinite;
+
+}.masthead {
+     /*position: relative;*/
+     margin-top:0;
+
+     width: 100%;
+     height:100%;
+     /*text-align: center;*/
+     color: black;
+     padding: 55px 55px  600px;
+     background-image: url("header.jpg");
+     /*background-position: center;*/
+     background-size: cover; }
